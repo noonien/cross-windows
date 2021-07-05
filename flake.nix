@@ -50,7 +50,7 @@
               # (wineMinimal.override { wineBuild = "wine64"; })
             ];
 
-            buildInputs = with pkgs.pkgsCross.mingwW64.windows; [ pthreads ];
+            buildInputs = with pkgs.pkgsCross.mingwW64.windows; [ mingw_w64_pthreads pthreads ];
 
             # Configures the target which will be built.
             # ref: https://doc.rust-lang.org/cargo/reference/config.html#buildtarget
